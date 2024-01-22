@@ -41,12 +41,12 @@ body {
   width: 100%;
   position: fixed;
 }
-.bar i{
+.bar i {
   color: #fff;
   font-size: 30px;
   cursor: pointer;
 }
-.bar i:hover{
+.bar i:hover {
   color: #042352;
 }
 .menu a {
@@ -679,17 +679,40 @@ footer {
 /* media query */
 
 @media (max-width: 900px) {
-  .menu, .logo2, .vehicles, .big-card, .btn1, .walk{
+  .menu,
+  .logo2,
+  .vehicles,
+  .big-card,
+  .btn1,
+  .walk {
     display: none;
   }
-  .logo img{
+  .logo img {
     width: 150px;
   }
-  .nav-text h1, .container-three h1, .container-four-text > h1, .container-five-text h1, .container-six-text h1, .container-seven-text{
+  .nav-text h1,
+  .container-three h1,
+  .container-four-text > h1,
+  .container-five-text h1,
+  .container-six-text h1,
+  .container-seven-text {
     font-size: 30px;
   }
-  .nav-text p, .container-three h3, .container-four-text h3{
+  .nav-text p,
+  .container-three h3,
+  .container-four-text h3 {
     font-size: 20px;
+  }
+  .sub-container-six{
+    height: auto;
+  }
+  .container-six-text > p{
+    font-size: 15px;
+  }
+  .container-six-text button, .btn{
+    font-size: 14px;
+    padding: 10px;
+    width: 90px;
   }
   .container-one {
     display: grid;
@@ -697,43 +720,74 @@ footer {
     grid-auto-rows: auto;
     place-items: center;
   }
-  .card{
+  .card {
     width: 60%;
   }
-  .text-one, .text-three, .sub-truck1, .sub-truck2{
+  .text-one,
+  .text-three,
+  .sub-truck1,
+  .sub-truck2 {
     display: none;
   }
-  .truck{
+  .truck {
     justify-content: center;
     height: auto;
   }
-  .sub-truck img{
+  .sub-truck img {
     right: 0%;
     width: 250px;
   }
-  .our-business{
+  .our-business {
     flex-direction: column;
     height: auto;
   }
-  .container-four-text{
+  .container-four-text {
     width: 70%;
   }
-  .tata-jeep{
+  .tata-jeep {
     margin-block: 100px;
   }
-  .tata-jeep img{
+  .tata-jeep img {
     width: 380px;
   }
-  .sub-container-seven{
+  .sub-container-seven {
     height: auto;
   }
-  .container-seven-text{
+  .container-seven-text {
     width: 70%;
   }
-  .list{
+  .list {
     font-size: 18px;
   }
-  .lust ul li{
-    font-size: 20px;
+  .head,
+  .foot {
+    font-size: 15px;
+  }
+  .form-icon {
+    padding-inline: 40px;
+  }
+  .form-input {
+    width: 190px;
+  }
+  .form-input > input {
+    width: 10px;
+  }
+}
+@media (min-width: 901px) {
+    .menu {
+    display: none;
+  }
+  .walk{
+    display: none;
+  }
+}
+
+
+@media (min-width :1229px) {
+  .bar{
+    display: none;
+  }
+  .menu, .walk{
+    display: block;
   }
 }
