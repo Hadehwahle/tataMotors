@@ -41,6 +41,14 @@ body {
   width: 100%;
   position: fixed;
 }
+.bar i{
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
+.bar i:hover{
+  color: #042352;
+}
 .menu a {
   color: white;
   text-decoration: none;
@@ -118,7 +126,7 @@ body {
   align-items: end;
   padding: 0px 15px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 1));
-  height: 600px;
+  height: auto;
   box-shadow: 0px 0px 90px 100px black;
 }
 .card {
@@ -296,7 +304,7 @@ body {
 .container-four {
   background-color: #f5f9ff;
   width: 100%;
-  height: 700px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -667,4 +675,65 @@ footer {
   margin-left: 5px;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
+}
+/* media query */
+
+@media (max-width: 900px) {
+  .menu, .logo2, .vehicles, .big-card, .btn1, .walk{
+    display: none;
+  }
+  .logo img{
+    width: 150px;
+  }
+  .nav-text h1, .container-three h1, .container-four-text > h1, .container-five-text h1, .container-six-text h1, .container-seven-text{
+    font-size: 30px;
+  }
+  .nav-text p, .container-three h3, .container-four-text h3{
+    font-size: 20px;
+  }
+  .container-one {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    place-items: center;
+  }
+  .card{
+    width: 60%;
+  }
+  .text-one, .text-three, .sub-truck1, .sub-truck2{
+    display: none;
+  }
+  .truck{
+    justify-content: center;
+    height: auto;
+  }
+  .sub-truck img{
+    right: 0%;
+    width: 250px;
+  }
+  .our-business{
+    flex-direction: column;
+    height: auto;
+  }
+  .container-four-text{
+    width: 70%;
+  }
+  .tata-jeep{
+    margin-block: 100px;
+  }
+  .tata-jeep img{
+    width: 380px;
+  }
+  .sub-container-seven{
+    height: auto;
+  }
+  .container-seven-text{
+    width: 70%;
+  }
+  .list{
+    font-size: 18px;
+  }
+  .lust ul li{
+    font-size: 20px;
+  }
 }
